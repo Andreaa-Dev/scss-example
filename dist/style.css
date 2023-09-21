@@ -1,0 +1,29 @@
+header {
+  background-color: #4e2a84;
+  padding: 20px 0;
+}
+header .header__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn.subscribe {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+.btn.shop {
+  background-color: rgb(32, 76, 197);
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

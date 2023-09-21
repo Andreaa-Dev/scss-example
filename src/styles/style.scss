@@ -1,0 +1,45 @@
+// start here
+
+@import "mixins";
+@import "variables";
+
+// variables: common color
+// $primary-color: #4e2a84;
+// $font-family: "Montserrat", sans-serif;
+//css
+// header {
+//   background-color: #4e2a84;
+//   padding: 20px 0;
+// }
+// sass
+header {
+  background-color: $primary-color;
+  padding: 20px 0;
+  // nesting
+  .header__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+// mixin
+
+// @mixin btn-style($bg-color, $text-color) {
+//   background-color: $bg-color;
+//   color: $text-color;
+
+//   // common
+//   border: none;
+//   cursor: pointer;
+//   border-radius: 4px;
+//   padding: 10px 20px;
+// }
+
+.btn.subscribe {
+  @include btn-style(#ff0000, #fff);
+}
+
+.btn.shop {
+  @include btn-style(rgb(32, 76, 197), #000000);
+}
