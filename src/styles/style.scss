@@ -6,11 +6,13 @@
 // variables: common color
 // $primary-color: #4e2a84;
 // $font-family: "Montserrat", sans-serif;
+
 //css
 // header {
 //   background-color: #4e2a84;
 //   padding: 20px 0;
 // }
+
 // sass
 header {
   background-color: $primary-color;
@@ -42,4 +44,17 @@ header {
 
 .btn.shop {
   @include btn-style(rgb(32, 76, 197), #000000);
+}
+
+// responsive
+body {
+  font-size: $base-font-size;
+
+  @include respond-to($medium-screen) {
+    font-size: $base-font-size * 2;
+  }
+
+  @include respond-to($large-screen) {
+    font-size: $base-font-size * 4;
+  }
 }

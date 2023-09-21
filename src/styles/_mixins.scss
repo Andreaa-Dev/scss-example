@@ -8,3 +8,10 @@
   border-radius: 4px;
   padding: 10px 20px;
 }
+
+// response
+@mixin respond-to($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
