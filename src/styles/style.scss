@@ -3,7 +3,7 @@
 @import "mixins";
 @import "variables";
 
-// variables: common color
+// variables: common/repeat color
 // $primary-color: #4e2a84;
 // $font-family: "Montserrat", sans-serif;
 
@@ -46,7 +46,8 @@ header {
   @include btn-style(rgb(32, 76, 197), #000000);
 }
 
-// responsive
+// responsive: defined in variable file
+// respond-to in mixin
 body {
   font-size: $base-font-size;
 
